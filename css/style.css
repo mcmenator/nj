@@ -1,0 +1,146 @@
+/* CSS Document */
+.uk-container .padding-non {
+	margin-left: 0;
+	border: 1px solid #c6c6c6;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.padding-non .uk-row-first {
+	padding-left: 0;
+	position: relative;
+}
+.actions {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 40%;
+	height: 40px;
+	line-height: 40px;
+	background: #ffd83b;
+	text-align: center;
+}
+.padding-non .uk-row-first img {
+	height: 100%;
+}
+.padding-non .new-style {
+	list-style: none;
+	padding-left: 0;
+}
+.new-style li {
+	position: relative;
+}
+.uk-article-meta {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.uk-article-meta .fa-clock-o {
+	font-size: 18px;
+	margin-right: 5px;
+}
+.new-style li:before {
+	content: "\f00c";
+	font-family: FontAwesome;
+	color: #ffd83b;
+	margin-right: 10px; 
+}
+.new-style span {
+	padding: 2px 10px;
+	margin: 0 5px 0 0;
+	border-radius: 8px;
+	background: #c4dcff;
+}
+.top-price {
+	font-size: 31px;
+}
+.price .uk-width-medium-3-10:first-child {
+	padding-top: 3px;
+}
+.bottom-price {
+	font-size: 11px;
+}
+.button-send input {
+	width: 160px;
+	height: 40px;
+	border: 0;
+	border-radius: 20px;
+	background: #ffd83b;
+}
+.container {
+    min-width: 320px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 20px 0;
+}
+table td, table th {
+    padding: 10px;
+    border: 1px solid #cbbdbd;
+}
+tr:nth-child(even){
+    background-color: #f0f4c3
+}
+@media (min-width:768px) {
+	.padding-non .uk-width-medium-6-10 {
+		padding: 15px;
+	}
+	.new-style li {
+		line-height: 16px;
+		margin-bottom: 10px;
+		display: flex;
+	}
+	.new-style li:last-child {
+		flex-wrap: wrap;
+	}
+	.new-style .right {
+		margin-left: 5px;
+	}
+}
+@media (max-width:768px) {
+	.uk-article-title a {
+		font-size: 16px;
+		line-height: 16px;
+	}
+	.padding-non .uk-width-medium-6-10 {
+		padding: 10px;
+	}
+	.new-style li {
+		line-height: 16px;
+		margin-bottom: 10px;
+		display: flex;
+	}
+	.new-style li:last-child {
+		flex-wrap: wrap;
+	}
+	.new-style .right {
+		margin-top: 5px;
+	}
+	.new-style li span:first-child {
+		margin-left: 25px;
+	}
+	.price .uk-width-small-1-2 {
+		width: 50%;
+	}
+	.price .uk-width-small-1-2:last-child {
+		padding-left: 0;
+	}
+	.container table thead {
+		display: none;
+	}
+	.container table tr {
+		display: block;
+	}
+	.container table td {
+		display: flex;
+		justify-content: space-between;
+		font-size: 14px;
+	}
+	.container table td::before {
+		content: attr(data-label);
+		font-weight: bold;
+		margin-right: 20px;
+	}
+}
